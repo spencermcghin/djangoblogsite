@@ -13,7 +13,4 @@ urlpatterns = [
     url(r'^post/new/$',
         post_new,
         name='post_new'),
-    url(r'^latest/feed/$',
-        LatestEntriesFeed(),
-        name='LatestEntriesFeed'),
 ]

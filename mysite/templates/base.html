@@ -10,9 +10,6 @@
       <ul id="control-bar">
       {% if user.is_authenticated %}
         {% if user.is_staff %}<li><a href="{% url 'admin:index' %}">admin</a></li>{% endif %}
-        <h4>FEEDS</h4>
-          <a href="latest/feed/" rel="alternate" type="application/rss+xml"><img alt="" style="align=left;border:0" src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png"/></a>
-        <a href="/latest/feed/">Subscribe to Blog Feed</a><br>
         <li><a href="{% url 'logout' %}">logout</a></li>
         <li><a href="{% url 'post_new' %}">new post</a></li>
       {% else %}
