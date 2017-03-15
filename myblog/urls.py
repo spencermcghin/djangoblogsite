@@ -1,6 +1,5 @@
 from django.conf.urls import url
 from myblog.views import list_view, detail_view, post_new
-from myblog.feeds import LatestEntriesFeed
 
 
 urlpatterns = [
